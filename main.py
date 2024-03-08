@@ -3,11 +3,14 @@ from data import question_data
 from quiz_brain import QuizBrain
 from ui import QuizInterface
 question_bank = []
-for question in question_data:
-    question_text = question['question']
-    question_answer = question['correct_answer']
-    new_question = Question(question_text, question_answer)
-    question_bank.append(new_question)
+
+
+def question_func():
+    for question in question_data:
+        question_text = question['question']
+        question_answer = question['correct_answer']
+        new_question = Question(question_text, question_answer)
+        question_bank.append(new_question)
 
 # print(question_bank[0].answer)
 quiz = QuizBrain(question_bank)
