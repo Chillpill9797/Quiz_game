@@ -15,7 +15,7 @@ class QuizInterface:
         self.score_label.grid(row=0, column=1)
         self.canvas = Canvas(height=250, width=300, background="white")
         self.canvas.grid(column=0, row=1, columnspan=2, pady=50)
-        self.question_text = self.canvas.create_text(100, 130, text="", font=('arial', 20, 'italic'))
+        self.question_text = self.canvas.create_text(150, 125, text="", width=280, font=('arial', 20, 'italic'))
 
         true_image = PhotoImage(file="images/true.png")
         self.true_button = Button(image=true_image, highlightthickness=0)
