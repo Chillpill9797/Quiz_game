@@ -15,10 +15,7 @@ def question_func():
 
 
 question_bank = question_func()
-# print(question_bank[0].answer)
 quiz = QuizBrain(question_bank)
 quiz_ui = QuizInterface(quiz)
-# while quiz.still_has_questions():
-#     quiz.next_question()
 print("You've completed the quiz")
 print(f"Your final score is:{quiz.score}/{quiz.question_number}")
